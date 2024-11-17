@@ -1,0 +1,175 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: 'Pixel coleco';
+}
+
+.wrapper {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-template-columns: 70px 1200px  minmax(10px, 1fr);
+	grid-template-rows: 35px minmax(100px, 1fr) 100px;
+	grid-template-areas:
+			"sidebar content header"
+			"sidebar content options"
+			"colourP content options";
+	background-color: #fff;
+	color: transparent;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: 'Pixel coleco';
+	background-color: #000;
+	text-align: center;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:block;
+	align-items: center;
+}
+
+.options{
+	grid-area: options;
+	padding: 5px;
+	padding-top: 100px;
+	font-size: small;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.options label {
+    margin-bottom: 5px;
+}
+
+.box {
+  background-color: #000;
+  box-shadow: inset;
+  color: #fff;
+  font-size: 100%;
+}
+
+.header {
+  background-color: #000;
+  text-align: center;
+}
+
+#header{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.button{
+	width:65px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 10px;
+	color: white;
+	font-family: 'pixel coleco';
+	padding: 5px;
+	align-self:center ;
+}
+
+#saveImageButton{
+	position: absolute;
+	top: 40px;
+	right: 50px;
+}
+
+#clearButton{
+	position: absolute;
+	top: 80px;
+	right: 50px;
+	align-self: center;
+}
+
+#directionButton{
+	width:auto;
+	position: absolute;
+	bottom: 50px;
+	color: yellow;
+	align-self: center;
+}
+
+.slider{
+	appearance:none ;
+	-webkit-appearance: none;
+	width: 75%;
+	height: 10px;
+	background: grey;
+	outline: none;
+	border: 5px solid black;
+	border-radius: 8px;
+	margin-top: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 30px;
+	background: red;
+	cursor: pointer;
+	border-radius: 4px;
+	border: 5px solid white;
+  }
+
+  #colourInput {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 50px;
+	height: 50px;
+	cursor:pointer;
+	border: 1.5px solid white;
+	position: absolute;
+	bottom: 15px;
+	left: 7px;
+	border-radius: 10px;
+  }
+
+  #colourInput::-webkit-color-swatch {
+	border: none;
+	border-radius: 5px;
+  }
+
+  #label{
+	position: absolute;
+	bottom: 55px;
+	left: 7px;
+  }
+
+  #shapeSelect{
+	width: fit-content;
+	color: yellow;
+	align-self: center;
+  }
+
+  #fill{
+	width: fit-content;
+	color: yellow;
+	align-self: center;
+	margin-top: 7px; 
+  }
