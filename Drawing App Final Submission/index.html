@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="Scripts/sketch.js"></script>
+    <script src="Scripts/colourPalette.js"></script>
+    <script src="Scripts/toolbox.js"></script>
+    <script src="Scripts/helperFunctions.js"></script>
+    <script src="Scripts/Eraser.js"></script>
+    <script src="Scripts/freehandTool.js"></script>
+    <script src="Scripts/lineToTool.js"></script>
+    <script src="Scripts/sprayCanTool.js"></script>
+    <script src="Scripts/mirrorDrawTool.js"></script>
+    <script src="Scripts/BucketTool.js"></script>
+    <script src="Scripts/Stamp.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body> <!---the body tag encapsulates everything that will be rendered in the browser-->
+  	<div class="wrapper">
+    
+      <div class="box header"> 
+        <p id="header">Drawing App</p>
+        <button class ="button" id="saveImageButton">Save</button>
+        <button class ="button" id="clearButton">Clear</button>
+      </div>
+      
+      <div class="box" id="sidebar">
+      </div>
+      <div id="content"></div>
+      
+      <div class="box colourPalette"> 
+        <div class="colorInContainer">
+          <p id="label">Color</p>
+          <input type="color" id="colourInput">
+          </div>
+      </div> <!--populate the colors for the color pallette function-->    
+    
+      <div class="box options" id = "options"> <!-- Populate the options for the different tools-->
+        <div id="eraserSizeSlider"></div>
+        <div id="strokeWeightSlider"></div>
+        <div id="densitySlider"></div>
+        <div id="spreadSlider"></div>
+      </div>
+	  </div>
+  </body>
+</html>
