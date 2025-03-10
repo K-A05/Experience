@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/8e6a2431-126e-44d3-84ca-8a9ac0f0279e
 #### Plant Identification AI: an upcoming project that will make use of a Convolutional Neural Network trained on a data set of plant images to allow users to identify plants in the environment by scanning them with their camera or uploading a photo.
 
 #### HTTP Proxy in Rust:
-A custom written proxy in Rust that is able to intercept and pass on HTTP traffic on the network and 
+A custom written proxy in Rust that is able to intercept traffic to and from a client device and annonymise their IP address on the internet to enhance the security posture and privacy of the user.
 
 ### Additional Qualification
 #### Google IT Support: 
